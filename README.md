@@ -21,3 +21,4 @@ Update the command to use the correct column and and file path to test appropria
 ## TODO
 
 - Make `CsvGrouper::Run` more testable. Printing to STDIO makes it hard to test
+  - Make `id_for_key`, `find_or_insert_map_value`, `matching_class` private methods
