@@ -1,8 +1,8 @@
 module CsvGrouper
   module Normalizer
-    class Zip
+    class Email
       def self.normalize(value)
-        value.parameterize.split("-").first
+        value.split("@").collect(&:parameterize).join("@")
       end
     end
   end

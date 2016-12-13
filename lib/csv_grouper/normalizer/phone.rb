@@ -1,8 +1,8 @@
 module CsvGrouper
   module Normalizer
-    class Zip
+    class Phone
       def self.normalize(value)
-        value.parameterize.split("-").first
+        value.parameterize(separator: "").gsub(/-/, "")
       end
     end
   end
